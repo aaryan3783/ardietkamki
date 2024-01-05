@@ -1,0 +1,501 @@
+ @media screen and (max-width : 1000px) {
+    
+    /* utility */
+     .logos-nav .container .nav-img{
+         display: none;
+     }
+     .links-nav{
+        overflow: initial;
+     }
+
+     .links-nav .container.flex{
+        position: absolute;
+        flex-direction: column!important;
+        justify-content: center !important;
+        background-color: white;
+        left: 100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 5rem;
+        z-index: 3;
+        transition: .2s ease-in-out all;
+        height: 100vh;
+        display: none;
+        
+     }
+
+     .links-nav .link.flex{
+        flex-direction: column !important;
+        margin-bottom: 2rem;
+     }
+
+     .links-nav .container.flex.active-toggle{
+        display: block;
+        left: 0;
+     }
+
+     .nav_btn{
+        text-align: center;
+     }
+
+     .logos-nav {
+         background-color: var(--accent-color-light);
+     }
+
+     .hamburger {
+         display: block !important;
+     }
+
+     .flex {
+         flex-direction: column-reverse;
+     }
+
+     .logos-nav .flex,
+     .notice-box,
+     .accordion-item-header,
+     .field-boxes,
+     .big-personality-message{
+         flex-direction: row;
+     }
+
+     
+
+     .footer-content {
+        padding: 5rem !important;
+        flex-direction: column;
+        gap: 5rem !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-about,
+    .footer-contact {
+        margin-inline: auto;
+    }
+
+    .footer-contact-content div {
+        flex-direction: row;
+    }
+
+    .footer-content div h3 {
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+
+    .footer-about img {
+        margin-inline: auto;
+    }
+
+    .footer-about p {
+        text-align: center;
+    }
+
+    .footer-contact-content {
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    /* some resets */
+    h2 {
+        text-align: center;
+        font-size: 3.5rem !important;
+    }
+
+    h1 {
+        font-size: 5.5rem !important;
+    }
+
+    /* home */
+
+    .header-content{
+        width: 90% !important;
+    }
+    .flex-content-right{
+        margin-inline: auto ;
+    }
+
+     .flex-content-right img {
+         height: 50rem !important;
+     }
+
+     .flex-content-right .about_img{
+        width: calc(100vw - 8rem) !important;
+     }
+
+     .vision-text i{
+        font-size: 15rem !important;
+    }
+
+    .vision h2{
+        text-align: left;
+    }
+
+
+     .mission-img{
+        width: fit-content !important;
+     }
+
+     .field-box {
+         width: calc(50% - 2rem) !important;
+     }
+
+
+     /* principal section */
+     .principal-message-box {
+        flex-direction: column-reverse;
+    }
+
+    .message-box-para-name p{
+        text-align: center;
+     }
+
+     /* for big-personality section */
+     .personality-box{
+        width: calc(50% - 3rem) !important;
+     }
+
+     .accordion {
+         min-width: 60vw !important;
+         max-width: none !important;
+     }
+
+     .cta-content .cta-content-left {
+         margin-top: 3rem;
+         text-align: center;
+     }
+
+     .cta-content .cta-content-right img {
+         max-width: 30rem !important;
+     }
+
+     
+
+     /* for about section */
+
+     .org-structure-img{
+        width: calc(100% - 4rem) !important;
+     }
+
+     .functions-container {
+         flex-direction: row !important;
+     }
+
+     .functions-container .functions-box{
+        width: calc(50% - 1rem);
+        min-height: 45rem;
+     }
+
+     .th-photo{
+        padding-inline: 2rem;
+     }
+
+     .directory,
+     .survey,
+     .certification,
+     .useful-links,
+     .notice, .sem{
+         overflow-x: auto;
+     }
+
+     /* programmes page */
+     .deled-content .sem-caption{
+        font-size: 2.5rem !important;
+     }
+
+     .deled-content-box{
+        grid-template-columns: 1fr;
+     }
+
+     .sem-activities .sem-caption{
+        text-align: center;
+    }
+
+     /* .directory::-webkit-scrollbar,
+     .survey::-webkit-scrollbar,
+     .certification::-webkit-scrollbar,
+     .useful-links::-webkit-scrollbar,
+     .notice::-webkit-scrollbar {
+         width: 5rem;
+     }
+
+     /* Track */
+     /* .directory::-webkit-scrollbar-track,
+     .survey::-webkit-scrollbar-track,
+     .certification::-webkit-scrollbar-track,
+     .useful-links::-webkit-scrollbar-track,
+     .notice::-webkit-scrollbar-track {
+         background: var(--accent-color-light);
+         border-radius: 2rem;
+     } */
+
+     /* Handle */
+     /* .directory::-webkit-scrollbar-thumb,
+     .survey::-webkit-scrollbar-thumb,
+     .certification::-webkit-scrollbar-thumb,
+     .useful-links::-webkit-scrollbar-thumb,
+     .notice::-webkit-scrollbar-thumb {
+         background: var(--accent-color-medium);
+         border-radius: 2rem;
+     }  */
+
+     /* gallery */
+     .gallery-photos {
+         flex-direction: row;
+     }
+
+     .gallery-photos img{
+        width: calc(50% - 1rem);
+     }
+
+
+     .gallery-videos {
+         flex-direction: row;
+     }
+
+     .gallery-videos iframe{
+        width: calc(50% - 1rem) !important;
+     }
+
+     .contact-principal-details div {
+         flex-direction: row;
+     }
+ }
+
+ @media screen and (max-width: 767px) {
+
+    .about_org ol{
+        padding: 3rem !important;
+    }
+   
+    .vision-text i{
+        font-size: 10rem !important;
+        top: -5rem !important;
+        right: 2rem !important;
+    }
+
+     .principal-message-box::after {
+         top: 4% !important;
+         left: 4% !important;
+     }
+
+     .principal-message-box img{
+        width: 25rem !important;
+        height: 25rem !important;
+     }
+
+     /* big personality section */
+     .personality-box{
+        width: 100% !important;
+     }
+
+     .big-personality-message img{
+        width: 60% !important;
+     }
+
+
+     .flex-content-right img {
+         height: 30rem !important;
+     }
+
+     .field-box {
+         width: 100% !important;
+     }
+
+     /* header sections must */
+     .header-content {
+         width: 90vw !important;
+     }
+
+     .header-content p {
+         width: 100% !important;
+     }
+
+     h1 {
+         font-size: 4rem !important;
+     }
+
+     .btn-main {
+         padding: 1rem 3rem !important;
+         font-size: 1.6rem !important;
+     }
+
+     .swiper-button-prev,
+     .swiper-button-next {
+         transform: scale(0.6);
+         margin-inline: 0rem !important;
+     }
+
+     .vision-text p{
+        font-size: 2rem !important;
+        padding: 3rem !important;
+     }
+
+     .vision h2{
+        margin-bottom: 2rem !important;
+     }
+
+     .vision-text p{
+        font-size: 1.8rem !important;
+     }
+
+     /* about section */
+     .functions-container .functions-box{
+        width: 100%;
+     }
+
+     /* FORM */
+     .main-form-inputs{
+        grid-template-columns: 1fr !important;
+     }
+
+     .main-form{
+        padding: 2rem !important;
+     }
+
+     textarea{
+        height: 12rem !important;
+        margin-bottom: 3rem;
+     }
+
+     form{
+        max-width: 100%;
+     }
+
+     /* gallery*/
+     .gallery-videos iframe{
+        width: 100% !important;
+     }
+
+     .gallery-photos img{
+        width: 100%;
+     }
+
+     .popup-img img{
+        width: 95%;
+     }
+
+     .popup-img span{
+        font-size: 4rem;
+     }
+     
+
+     /* success */
+     .success img{
+        width: 95%;
+     }
+
+
+ }
+
+
+ @media screen and (max-width: 479px) {
+     h2 {
+         font-size: 3.5rem !important;
+         margin-bottom: 2rem !important;
+     }
+
+     p {
+         font-size: 1.4rem !important;
+     }
+
+     ol li{
+        font-size: 1.4rem !important;
+     }
+
+     .nav_logo{
+        width: 20rem !important;
+     }
+
+     .about_org .flex-content{
+        flex-direction: column !important;
+    }
+
+    .about_org ol{
+        font-size: 1.5rem !important;
+    }
+
+     .flex-content-right img, .flex-content-right .about_img{
+        width: 100% !important;
+     }
+
+     .main-notice-table tr .notice-title{
+         font-size: 1.6rem !important;
+         padding-inline: 1rem !important;
+         padding-block: 1.5rem !important;
+     }
+
+     .main-notice-table tr td .notice-date,
+     .notice-download {
+         padding: .5rem !important;
+         font-size: 1.4rem !important;
+     }
+
+     .notice{
+        margin-inline: 2rem !important;
+     }
+
+     .principal-message-box::after {
+        top: 2% !important;
+        left: 4% !important;
+    }
+
+    .principal-message-box{
+        padding: 3rem !important;
+    }
+
+    .big-personality-message img{
+        width: 90% !important;
+     }
+
+     .personality-box{
+        padding: 5rem 3rem !important;
+     }
+
+     .personality-box h3{
+        font-size: 2.4rem !important;
+     }
+
+    .vision-text p{
+        text-align: center;
+        padding-inline: 1rem !important;
+        
+    }
+
+    /* about section */
+    .org-structure-img{
+        width: 100% !important;
+    }
+
+    .functions-container .functions-box{
+        width: 100% !important;
+    }
+
+    /* programme section */
+    .form-programme-download a i{
+        font-size: 2rem !important;
+    }
+
+    .deled-content-box div{
+        padding: 2rem ;
+    }
+    
+    /* others */
+    .cta-content .cta-content-right img{
+        max-width: 25rem !important;
+    }
+
+    .more-details{
+        text-align: center;
+    }
+
+    .more-details-box p{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #rzp-button1 img{
+        max-width: 20rem !important;
+    }
+
+ }

@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* fonts  */
+@font-face {
+    font-family: "roxborough-medium";
+    src: url("../fonts/RoxboroughCF-Medium.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "roxborough-bold";
+    src: url("../fonts/RoxboroughCF-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "roxborough-extra";
+    src: url("../fonts/RoxboroughCF-ExtraBold.woff") format("woff");
+    font-display: swap;
+}
+/* resets  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: rgba(0, 0, 0, 0.85);
+    --accent-color-light: #EEF5EF;
+    --accent-color-medium: #C7E0CB;
+    --accent-color-dark: #98B79D;
+    --margin-below: 10rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+h2{
+    font-size: 5.5rem;
+    font-weight: 800;
+    font-family: 'roxborough-extra', 'poppins', sans-serif;
+    margin-bottom: 4rem;
+    line-height: 90%;
+}
+
+h3{
+    font-size: 2rem ;
+    font-weight: 500;
+    font-family: 'roxborough-medium', 'poppins', sans-serif;
+}
+
+p{
+    color: var(--secondary-color);
+    line-height: 170%;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'roxborough-medium';
+}
+
+img{
+    display: block;
+}
+
+.btn-main{
+    border: 1px solid var(--primary-color);
+    background-color: var(--accent-color-medium);
+    padding: 1rem 3rem;
+    border-radius: 0px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-out all;
+    
+}
+
+.btn-main:hover{
+    background-color: #bae0c0;
+    color: black;
+}
+
+img{
+    object-fit: cover !important;
+    object-position:50% 50%;
+}
+
+/* utilities */
+
+.highlighted{
+    color: var(--accent-color-dark);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.m-block{
+    margin-block: var(--margin-below);
+}
+
+.m-below{
+    margin-bottom: var(--margin-below);
+}
+
+
+/* nav section */
+
+/* logos */
+.logos-nav{
+    padding-block: 1.5rem ;
+}
+
+.logos-nav div{
+    justify-content: space-between;    
+}
+
+/* links */
+.links-nav{
+    background-color: var(--accent-color-light);
+    position: relative;
+}
+
+.links-nav div{
+    justify-content: space-between;
+}
+
+.link{
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* header section - slider*/
+header .swiper {
+    min-height: 90vh;
+}
+
+.swiper{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    margin-bottom: var(--margin-below);
+}
+
+.swiper-slide img{
+    height: 90vh;
+    width: 100%;
+}
+
+/* for the black overlay */
+.swiper-slide .colour-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.35;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: white;
+    margin-inline: 2rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+.swiper-pagination-bullet{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline: 1rem;
+}
+
+.header-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 110rem;
+    margin-block: 5rem;
+    pointer-events: none;
+}
+
+.header-content .header-title{
+    text-align: center;
+    color: white;
+    font-size: 6.5rem;
+    font-family: 'roxborough-extra', 'poppins', sans-serif;
+    
+    line-height: 90%;
+    margin-bottom: 1rem;
+}
+
+.header-content p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    width: 60%;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.header-content div{
+    text-align: center;
+}
+
+.header-content div a{
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+    pointer-events: all ;
+}
+
+/* about the organisation */
+.content-section{
+    margin-bottom: var(--margin-below);
+}
+
+.about_org ol{
+    border: 2px solid #567c5c;
+    border-radius: 25px;
+    padding: 5rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.about_org ol li{
+     color:#567c5c;
+}
+
+
+.flex-content{
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.flex-content-right img{
+    width: fit-content;
+}
+
+.flex-content-right .about_img{
+    height: 35rem;
+    width: 55rem;
+    border-radius: 2.5rem;
+}
+/* field-works */
+.field-works{
+    margin-bottom:var(--margin-below) ;
+}
+
+.field-works h2{
+    text-align: center;
+}
+.field-boxes{
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-box{
+    width: calc(33% - 1rem);
+    cursor: pointer;
+    transition: .5s ease all;
+    border: 2px solid var(--primary-color);
+    min-height: 55rem;
+}
+
+.field-box img{
+    width: 100%;
+    height: 20rem;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.box-content{
+    width: 100%;
+}
+
+.field-box:hover{
+    transform: translateY(-1rem);
+    background-color: #00000005;
+}
+
+.box-content h3{
+    border-block: 2px solid var(--primary-color);
+    padding: 2rem;
+    background-color: var(--accent-color-light);
+}
+
+.box-content p{
+    padding: 2rem;
+}
+
+/* mission and vission */
+.vision .highlighted{
+    color: #a077d1;
+}
+
+.vision-text{
+    position: relative;
+}
+
+
+.vision h2{
+    z-index: 5;
+    position: relative;
+}
+
+.vision-text p{
+    font-size: 2.4rem;
+    padding: 5rem;
+    border: 3px solid var(--primary-color);
+    background-color: rgb(250, 246, 255);
+    font-style: italic;
+}
+
+.vision-text p .bg-highlight{
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    background-color: #e9d7ff;
+}
+
+.vision-text i{
+    position: absolute;
+    top: -8rem;
+    right: 5rem;
+    font-size: 17rem;
+    color: #e5dfec;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/* scroll container of notice section */
+/* scroll bar set up- */
+.notice-swiper{
+    max-width: 80rem;
+    max-height: 30rem;
+    background-color: var(--accent-color-light);
+    padding: 0;
+    cursor:grab
+}
+
+
+.notice-swiper .swiper-slide {
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .notice-swiper  .swiper-scrollbar{
+    background-color: var(--accent-color-dark);
+}
+
+  /* notice - main styling */
+.notice{
+    margin-bottom: var(--margin-below);
+    margin-inline: 5rem;
+}
+
+.notice h2{
+    text-align: center;
+}
+
+.main-notice-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-notice-table tr, .main-notice-table tr td{
+    border: 2px solid black;
+}
+
+.main-notice-table tr .notice-title{
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-notice-table tr td .notice-date{
+    text-align: center;
+    padding: 1rem;
+}
+.notice-download{
+    transition: .2s ease all;
+    padding: 2rem;
+    text-align: center;
+}
+
+.notice-download:hover{
+    background-color: #dfeadf;
+}
+
+.notice-download i{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+/* principal's message */
+.principal-message{
+    margin-bottom: var(--margin-below);
+}
+
+.principal-message-box{
+    justify-content: center;
+    padding: 4rem 5rem;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23333' stroke-width='5' stroke-dasharray='15%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 3rem;
+    position: relative;
+    gap: 3rem;
+}
+
+.principal-message-box::after{
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 2%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color-light);
+    background: url("/assets/index/bg_principal.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 3rem;
+}
+
+.principal-message-box img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+
+
+/* big personality section */
+.big-personality-message{
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.personality-box{
+    padding: 3rem;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23333' stroke-width='5' stroke-dasharray='15%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 3rem;
+    /* background-color: #f8f5fc; */
+    width: calc(33% - 2rem);
+    position: relative;
+    min-height: 100%;
+}
+
+.personality-box::after{
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 4%;
+    width: 100%;
+    height: 100%;
+    background-color: #f2eef5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 3rem;
+}
+
+.personality-box:nth-child(1):after{
+    background-color: #efeef5;
+}
+
+.personality-box:nth-child(2):after{
+    background-color: #f5f1ee;
+}
+
+.personality-box:nth-child(3):after{
+    background-color: #f5eeee;
+}
+
+.big-personality-message img{
+    border-radius: 50%;
+    width: 80%;
+    margin: auto;
+}
+
+.personality-box h3, .personality-box p{
+    text-align: center;
+}
+
+.personality-box h3{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+
+/* FAQ section - accordion */
+
+.faq h2{
+    text-align: center;
+}
+
+.accordion{
+    max-width: 60vw;
+    margin: auto;
+    margin-bottom: var(--margin-below);
+}
+
+.accordion-item{
+    margin-bottom: 2rem;
+}
+
+.accordion-item-header{
+    justify-content: space-between;
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: .2s ease all;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.accordion-item-header:hover{
+    background-color: rgb(0, 0, 0, 0.07);
+}
+
+.accordion-item-header i{
+    font-size: 2.2rem;
+}
+
+.accordion-hidden-content{
+    padding: 2rem;
+    background-color: var(--accent-color-light);
+    display: none;
+}
+
+.active .accordion-hidden-content{
+    display: block;
+}
+
+/* special case - ordered list */
+
+
+ol{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+ol li{
+    margin-bottom: 1rem;
+    list-style: inherit;
+    list-style-position: inside;
+    color: var(--secondary-color);
+    text-align: justify;
+}
+
+ol li span{
+    font-weight: 600;
+}
+
+/* cta section */
+.cta-section{
+    background-color: var(--accent-color-light);
+    padding-block:  5rem;
+    background-color: rgb(238, 245, 239, 0.9);
+    position: relative;
+    margin-bottom: 0 !important;
+    margin: auto;
+}
+
+.cta-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/index/bg_cta.webp");
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.cta-content{
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 110rem;
+}
+
+.cta-content .cta-content-right img{
+    max-width: 35rem;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.cta-content .cta-content-right img:hover{
+    transform: translateX(-1rem);
+}
+
+
+/* footer section */
+footer{
+    
+    background-color: #dfede0;
+    border-top: 3px solid var(--primary-color);
+}
+
+.footer-content{
+    padding-block: 5rem;
+    justify-content: center;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.footer-content div{
+    flex-basis: 33%;
+}
+
+.footer-content h3{
+    font-family: "roxborough-bold";
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-link-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-contact-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-contact-content div{
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-contact-content div i{
+    font-size: 2rem;
+    margin-top: .5rem;
+}
+
+.footer-about{
+    flex-basis: 50% !important;
+}
+
+
+/* copyright */
+.copyright{
+    padding: 2rem;
+    background-color: #d5e6d6;
+}
+.copyright span{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.copyright span a{
+    border-bottom: 1px solid black;
+    padding-inline-start: .5rem;
+}
+
+

@@ -1,0 +1,87 @@
+tr{
+    cursor: inherit;
+}
+
+tr:hover{
+    background-color: inherit;
+}
+
+.form-programme-download{
+    cursor: pointer;
+}
+
+.form-programme-download a{
+    width: 100%;
+    height: 100%;
+}
+
+.form-programme-download:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.form-programme-download a i{
+    font-size: 2.5rem;
+}
+
+td{
+    padding: 2rem;
+}
+
+.about-deled ol ol{
+    margin-top: 1rem;
+    margin-inline: 2rem;
+}
+
+.deled-content .sem-caption{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'roxborough-bold', sans-serif;
+    text-align: center;
+}
+
+
+/* semester ki styles */
+.sem{
+    margin-bottom: 5rem;
+}
+
+th{
+    padding-inline: 1rem;
+}
+
+.sem-activities th, .sem-activities td{
+    text-align: left;
+    padding: 1rem;
+}
+
+.sem-activities .sem-caption{
+    text-align: left;
+}
+
+
+.sem-activities td h3, .sem-activities td p{
+    text-align: left;
+}
+
+.deled-content-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+
+.deled-content-box div{
+    border: .8px solid black;
+    border-radius: 15px;
+    padding: 4rem 5rem;
+}
+
+.deled-content-box .box-first-sembreak{
+    background-color: var(--accent-color-light);
+    flex-basis: 100%;
+}
+
+.deled-content-box div h3{
+    font-size: 2.5rem;
+    font-family: 'roxborough-bold';
+    margin-bottom: 1rem;
+}
